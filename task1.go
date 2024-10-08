@@ -8,4 +8,11 @@ func main() {
 	fmt.Println("Value of x=", x)
 	fmt.Println("Address of x=", &ptr)
 	fmt.Println("Address of ptr=", *ptr)
+
+	//fmt.Println("Value of x=", x)
+	//fmt.Println("Address of x=", &ptr)
+	//fmt.Println("Address of ptr=", *ptr)
+	//fmt.Println("Value of x=", x)
+	//fmt.Println("Address of x=", &ptr)
+	//fmt.Println("Address of ptr=", *ptr)
 }

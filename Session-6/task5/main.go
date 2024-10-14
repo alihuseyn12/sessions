@@ -31,5 +31,6 @@ func main() {
 	}
 
 	//fmt.Printf("%d", addMap["go"])
+	//task 5 is done
 
 }

@@ -27,6 +27,6 @@ func countryCek(name string) string {
 		return value
 	} else {
 		return "Capital of " + name + "is not found"
-	}
 
+	//task 4 is done
 }

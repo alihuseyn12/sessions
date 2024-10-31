@@ -7,7 +7,7 @@ func UnbufferdChanalsCheck() chan int {
 	ch := make(chan int)
 
 	go func() {
-		time.Sleep(time.Second * 5)
+		time.Sleep(time.Millisecond * 500)
 		ch <- 42
 	}()
 	return ch

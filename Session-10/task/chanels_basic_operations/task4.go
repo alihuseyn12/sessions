@@ -1,8 +1,6 @@
 package chanels_basic_operations
 
-func ChanlTask4() chan int {
-
-	ch := make(chan int)
+func ChanlTask4(ch chan int) {
 
 	go func() {
 		ch <- 1
@@ -13,5 +11,5 @@ func ChanlTask4() chan int {
 		close(ch)
 
 	}()
-	return ch
+
 }

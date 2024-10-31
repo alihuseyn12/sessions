@@ -5,21 +5,15 @@ import (
 	"time"
 )
 
-func CheckBufferedChannel(a, b, c int) {
-	ch := make(chan int, 3)
-	ch <- a
-	ch <- b
-	ch <- b
+func CheckBufferedChannel(ch chan int) {
 
-	close(ch)
-	fmt.Println("Sent values into buffered channel")
 	go func() {
 
 		fmt.Println(<-ch)
 		fmt.Println(<-ch)
 		fmt.Println(<-ch)
 	}()
-
+	close(ch)
 	time.Sleep(time.Second * 1)
 	fmt.Println("All values received")
 }

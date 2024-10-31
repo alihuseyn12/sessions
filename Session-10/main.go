@@ -1,17 +1,12 @@
 package main
 
-import "Session-10/task/buffered_unbufered_channels"
-
 func main() {
 	//task1
 	//goroutines.CountNumber()
-	//time.Sleep(1 * time.Second)
 
 	//task2
 
 	//goroutines.CheckProcess()
-	//time.Sleep(time.Second * 2)
-	//fmt.Println("Main finished")
 
 	//task3 Channels - Basic Operations
 
@@ -20,19 +15,24 @@ func main() {
 	//fmt.Println("Received value:", data)
 
 	//task4
-
-	//ch1 := chanels_basic_operations.ChanlTask4()
-	//for ch2 := range ch1 {
+	//ch := make(chan int)
+	//chanels_basic_operations.ChanlTask4(ch)
+	//for ch2 := range ch {
 	//	fmt.Println(ch2)
 	//}
 	//fmt.Println("Channel closed")
 
 	//task5
-
-	//buffered_unbufered_channels.CheckBufferedChannel(10, 20, 30)
+	//ch5 := make(chan int, 3)
+	//ch5 <- 10
+	//ch5 <- 20
+	//ch5 <- 30
+	//fmt.Println("Sent values into buffered channel")
+	//buffered_unbufered_channels.CheckBufferedChannel(ch5)
 
 	//task6
-
-	buffered_unbufered_channels.UnbufferedchannelChek6("hello")
-
+	//ch6 := make(chan string)
+	//ch6 <- "Hello"
+	//buffered_unbufered_channels.UnbufferedchannelChek6(ch6)
+	//
 }

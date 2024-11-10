@@ -20,5 +20,6 @@ func main() {
 
 	}
 	fmt.Printf("Reversed array: %d", arr)
+	//task 1 is done
 
 }

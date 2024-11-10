@@ -14,5 +14,6 @@ func main() {
 
 	// Show the effect of append() on the underlying array by printing both the slice and the original array after appending.
 	//yuxaridaki tapsiriqi tam olaraq basa dusmedim.
+	//task 3 is done
 
 }
